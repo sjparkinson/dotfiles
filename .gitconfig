@@ -1,0 +1,27 @@
+[user]
+	name = Samuel Parkinson
+	email = samuel.parkinson@hey.com
+[core]
+	autocrlf = input
+	ignorecase = false
+	editor = nano
+	pager = less -F -X
+	whitespace = trailing-space,space-before-tab,tab-in-indent
+[push]
+	default = current
+	followTags = true
+[rerere]
+	enabled = true
+[remote "origin"]
+	prune = true
+[log]
+	abbrevCommit = true
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[init]
+	defaultBranch = main
+[pull]
+	ff = only
