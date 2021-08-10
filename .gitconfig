@@ -2,6 +2,7 @@
 	name = Samuel Parkinson
 	email = samuel.parkinson@hey.com
 [core]
+	excludesfile = ~/.gitignore
 	autocrlf = input
 	ignorecase = false
 	editor = nano
@@ -12,6 +13,10 @@
 	followTags = true
 [rerere]
 	enabled = true
+[alias]
+	branches = branch -vv
+	remotes = remote -v
+	tags = log --date-order --tags --simplify-by-decoration --pretty=format:\"%ci %d\"
 [remote "origin"]
 	prune = true
 [log]
@@ -21,6 +26,8 @@
 	diff = auto
 	interactive = auto
 	status = auto
+[url "https://"]
+	insteadOf = git://
 [init]
 	defaultBranch = main
 [pull]
