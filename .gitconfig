@@ -6,7 +6,7 @@
 	autocrlf = input
 	ignorecase = false
 	editor = nano
-	pager = less -F -X
+	pager = less -F -X --mouse --wheel-lines=3
 	whitespace = trailing-space,space-before-tab,tab-in-indent
 [push]
 	default = current
